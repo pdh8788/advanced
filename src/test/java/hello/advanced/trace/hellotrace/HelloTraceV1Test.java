@@ -32,4 +32,11 @@ public class HelloTraceV1Test {
         TraceStatus status = trace.begin("hello");
         trace.exception(status, new IllegalStateException());
     }
+
+    @Test
+    void begin_exception3() {
+        HelloTraceV1 trace = new HelloTraceV1();
+        TraceStatus status = trace.begin("hello");
+        trace.exception(status, new IllegalStateException());
+    }
 }
