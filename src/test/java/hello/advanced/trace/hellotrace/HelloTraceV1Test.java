@@ -18,4 +18,18 @@ public class HelloTraceV1Test {
         TraceStatus status = trace.begin("hello");
         trace.exception(status, new IllegalStateException());
     }
+
+    @Test
+    void begin_exception1() {
+        HelloTraceV1 trace = new HelloTraceV1();
+        TraceStatus status = trace.begin("hello");
+        trace.exception(status, new IllegalStateException());
+    }
+
+    @Test
+    void begin_exception2() {
+        HelloTraceV1 trace = new HelloTraceV1();
+        TraceStatus status = trace.begin("hello");
+        trace.exception(status, new IllegalStateException());
+    }
 }
